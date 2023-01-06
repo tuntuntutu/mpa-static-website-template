@@ -14,7 +14,7 @@ function PageShell({
   return (
     <React.StrictMode>
       <PageContextProvider pageContext={pageContext}>
-        <HeaderBar pageContext={pageContext} />
+        <HeaderBar />
         <div id="page-container" style={{ paddingTop: "0.4rem" }}>
           <div
             id="page-content"
