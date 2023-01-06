@@ -1,0 +1,79 @@
+body {
+  font-family: DaimlerCA, 'PingFangSC-Light', Tahoma, Arial, 'Helvetica Neue', 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif;
+  margin: 0;
+  font-variant: tabular-nums;
+  line-height: 1.5;
+  background-color: #fff;
+  font-feature-settings: "tnum";
+  color: #000;
+}
+
+html {
+  font-stretch: ultra-condensed;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+::selection {
+  color: #fff;
+  background: #000;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  transition: color .3s;
+}
+
+input {
+  outline: none;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+// 充值antd样式
+.ant-calendar-picker:focus .ant-calendar-picker-input:not(.ant-input-disabled) {
+  box-shadow: none;
+}
+
+.ant-input:focus {
+  box-shadow: none;
+}
+
+.ant-calendar-today-btn {
+  color: #B78B4D;
+}
+
+.ant-calendar a:hover {
+  color: #B78B4D;
+}
+
+.ant-input, .ant-time-picker-input {
+  color: #000;
+}
+
+.ant-calendar-selected-day .ant-calendar-date {
+  background-color: #B78B4D;
+  color: #fff;
+  border-radius: 2px;
+
+  .ant-calendar-date:hover {
+    // background:rgba(183,139,77,.2);
+    // border-radius:2px;
+  }
+}
+
+.ant-calendar-date:hover {
+  // background:rgba(183,139,77,.2);
+  // border-radius:2px;
+}

@@ -1,0 +1,66 @@
+@import '../../styles/index';
+
+.g-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  z-index: 12;
+  background: #000;
+  &.hidden{
+    display: none;
+  }
+
+  .logo {
+    margin-left: .79rem;
+    line-height: .4rem;
+    vertical-align: middle;
+
+    > img {
+      height: .8rem;
+    }
+  }
+
+  .menu {
+    position: absolute;
+    right: 0;
+    top: .1rem;
+    display: flex;
+    padding-right: .79rem;
+
+    .language-toggle {
+      margin-right: .4rem;
+      color: rgba(255, 255, 255, 1);
+    }
+    &-item {
+      display: inline-block;
+      margin-right: .4rem;
+      line-height: .5rem;
+      font-size: .2rem;
+      color: rgba(255, 255, 255, 1);
+      border-bottom: 1px solid transparent;
+      cursor: pointer;
+      position: relative;
+
+      &.active {
+        color: @primary-color;
+        border-bottom: 1px solid @primary-color;
+      }
+      &:hover{
+        color: @primary-color;
+        border-bottom: 1px solid @primary-color;
+      }
+      &.about-us::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -0.2rem;
+        width: 0;
+        height: 0.17rem;
+        border-right: 1px solid rgba(255, 255, 255, .15);
+      }
+    }
+  }
+}
